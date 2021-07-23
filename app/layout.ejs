@@ -5,22 +5,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>
+    <%- title %>
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/rest.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <div class="header u-bg--primary">
+    <nav class="l-container l-navbar">
+      <a href="#" class="l-navbar__logo" title="回到首頁">
+        <img src="./assets/images/logo.png" alt="logo圖片">
+      </a>
+      <ul class="l-navbar__dropdown">
+        <li class="l-navbar__dropdown__item"><a href="#" title='系列鏡框' class="l-navbarLink">系列鏡框</a></li>
+        <li class="l-navbar__dropdown__item"><a href="#" title='門市據點' class="l-navbarLink">門市據點</a></li>
+        <li class="l-navbar__dropdown__item"><a href="#" title='部落格' class="l-navbarLink">部落格</a></li>
+        <li class="l-navbar__dropdown__item"><a href="#" title='常見問題' class="l-navbarLink">常見問題</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <%- contents %>
+    <footer class="l-footer u-bg--primary">
+      <div class="l-container">
+        <nav class="l-footerNav">
+          <div class="l-footerNav__left">
+            <ul class="l-footerNav__left__list">
+              <li class="l-footerNav__left__list__item"><a href="#" class="l-footerLink" title="首頁">首頁</a></li>
+              <li class="l-footerNav__left__list__item"><a href="#" class="l-footerLink" title="系列鏡框">系列鏡框</a></li>
+              <li class="l-footerNav__left__list__item"><a href="#" class="l-footerLink" title="門市據點">門市據點</a></li>
+              <li class="l-footerNav__left__list__item"><a href="#" class="l-footerLink" title="部落格">部落格</a></li>
+              <li class="l-footerNav__left__list__item"><a href="#" class="l-footerLink" title="常見問題">常見問題</a></li>
+            </ul>
+            <ul class="l-footerNav__left__info">
+              <li class="l-footerNav__left__info__item">
+                <a href="#" class="l-footerContactLink">
+                  <img src="./assets/images/icon-phone.svg" alt="電話圖示"
+                    class="l-footerContactLink__icon">0800-000-000</a>
+              </li>
+              <li class="l-footerNav__left__info__item">
+                <a href="#" class="l-footerContactLink">
+                  <img src="./assets/images/icon-mail.svg" alt="e-mail 圖示"
+                    class="l-footerContactLink__icon">glasses@business.com</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="l-footerNav__icon">
+            <li><a class="l-footersocialLink" href="#"><img class="l-footersocialLink__icon"
+                  src="./assets/images/icon-fb.svg" alt="fb圖示"></a></li>
+            <li><a class="l-footersocialLink" href="#"><img class="l-footersocialLink__icon"
+                  src="./assets/images/icon-ig.svg" alt="ig圖示"></a></li>
+            <li><a class="l-footersocialLink" href="#"><img class="l-footersocialLink__icon"
+                  src="./assets/images/icon-line.svg" alt="line圖示"></a></li>
+          </ul>
+        </nav>
+        <hr class="u-borderBottom">
+        <div class="l-footerStatement">
+          <p class="l-footerStatement__copyright">Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul class="l-footerStatement__clause">
+            <li><a class="l-clauseLink" target="_blank" href="#">隱私權政策</a></li>
+            <li><a class="l-clauseLink" target="_blank" href="#">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
 </body>
 
 </html>
