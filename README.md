@@ -1,6 +1,21 @@
-# 網頁切版直播班 Gulp 範例
+# 超清晰眼鏡行 | Glasses store
+> 超清晰眼鏡行一是個電商網網站，裡面什麼都有賣
+> 2021-08製作
 
-> 使用該專案 Gulp 時，就可以不用使用其他編譯工具編譯 SCSS 或是 JavaScript 囉。
+## 成品與資源連結
+- Pages
+  - [首頁index](https://penuts27.github.io/glassweb/)
+  - [產品頁products](https://penuts27.github.io/glassweb/product.html)
+-設計稿
+  -[首頁index](2224af-8682/screen/9030f53b-bb49-44c3-8d71-9901ad0d5206/specs/)
+  -[產品頁products](https://xd.adobe.com/view/d3d1119a-affd-4f48-8188-f070932224af-8682/screen/d1c41c34-bb77-47f2-94c4-2ebb63bb20e3/specs/)
+
+## 使用前端工具
+node npm - gulp
+`bower 前端工具`
+`ejs`
+`scss`
+`css-bem命名`
 
 ## 指令列表
 
