@@ -1,0 +1,15 @@
+@mixin hide_text{
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@mixin md{
+  @media(max-width: 992px){
+    @content;
+  }
+}
+@mixin sm{
+  @media(max-width: 767px){
+    @content;
+  }
+}

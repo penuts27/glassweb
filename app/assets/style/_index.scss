@@ -1,0 +1,443 @@
+.mv{
+  height: 840px;
+  background-image: url('../images/banner.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  @include sm{
+    height: 394px;
+    background-position: 44% 50%;
+  }
+  &__wrap{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__title{
+    font-size: $h1-font-size;
+    line-height: 92px;
+    color: $danger;
+    font-weight: 700;
+    text-align: right;
+    @include md{
+      font-size: $h2-font-size;
+      line-height: 70px;
+    }
+    @include sm{
+      font-size: $h3-font-size - 4px;
+      line-height: 45px;
+    }
+    span{
+      font-size: $h3-font-size;
+      line-height: 54px;
+      font-weight: 400;
+      display: block;
+      @include md{
+      font-size: $h5-font-size;
+      line-height: 29px;
+      }
+      @include sm{
+      font-size: $h6-font-size;
+      line-height: 22px;
+      }
+    }
+  }
+}
+.brandFeature{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: calc(25% - 22.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    @include md{
+      width: calc(50% - 52px);
+      min-height: 222px;
+    }
+    @include sm{
+      width: 100%;
+      margin-bottom: 40px;
+      min-height: auto;
+    }
+    &:nth-child(1), &:nth-child(2){
+      @include md{
+      margin-bottom: 57px;
+      }
+      @include sm{
+        margin-bottom: 40px;
+      }
+    }
+    &:nth-child(1){
+      @include sm{
+        margin-top: 8px;
+      }
+    }
+    &:nth-child(4){
+        @include sm{
+          margin-bottom: 0;
+        } 
+    }
+    img{
+      width: 83px;
+      margin: 0 auto;
+      display: block;
+    }
+    h3{
+      font-size: $h4-font-size;
+      line-height: 35px;
+      color: $danger;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    p{
+      color: $black;
+      @include sm{
+        width: 75%;
+      }
+    }
+  }
+  &__imgbox-inner{
+    // border: 1px solid #000;
+    width: 100%;
+    height: 83px;
+    margin-bottom: 24px;
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+  }
+}
+.classic{
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    position: relative;
+    @include md{
+      margin-bottom: 8px;
+    }
+    &:nth-child(2){
+      display: flex;
+      flex-direction: row-reverse;
+      @include md{
+       flex-direction: row;
+      }
+      h3{
+        padding-right: 32px;
+      }
+    }
+    &:nth-child(3){
+      @include md{
+       margin-bottom: 0;
+      }
+      h3{
+       img{
+         @include md{
+          width: 25px;
+         }
+       }
+      }
+    }
+    img{
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+    h3{
+      display: flex;
+      align-self: center;
+      font-size: $h2-font-size;
+      line-height: 63px;
+      align-items: center;
+      font-style: italic;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-left: 32px;
+      @include md{
+      font-size: $h4-font-size + 4px;
+      line-height: 37px;
+      img{
+      width: 44px;
+      margin-right: 10px;
+      @include md{
+        width: 30px;
+      }
+    }
+      }
+      @include sm{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  }
+  }
+  &__innerbox{
+    width: 635px;
+    height: 320px;
+    @include md{
+      width: 390px;
+      height: 168px;
+    }
+    @include sm{
+      width: 100%;
+    }
+  }
+}
+.co-branding{
+  background-image: url('../images/bg.png');
+  background-size: cover;
+  background-position: -110px -540px;
+  @include md {
+    background-position: -110px -255px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: calc(50% - 15px);
+    @include sm{
+      width: 100%;
+    }
+    &:first-child{
+      margin-bottom: 16px;
+    }
+  }
+  &__img{
+      height: 455px;
+      background-position: center;
+      background-size: cover;
+      // --
+      &:hover, &:active, &:focus{
+      .co-branding__img--mask{
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0);
+      transition: .5s ease;
+      h3{
+        color: transparent;
+        transition: .5s ease;
+      }
+    }
+  } 
+      @include md {
+        height: 278px;
+      }
+      h3{
+        font-size: $h1-font-size + 8px;
+        line-height: 95px;
+        color: $primary;
+        font-weight: 700;
+        @include md {
+          font-size: $h3-font-size - 4px;
+          line-height: 43px;
+        }
+      }
+      &--mask{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($white, 0.5);
+    }
+  }
+  &__img01{
+    background-image: url('../images/product-8.png');
+  }
+  &__img02{
+      background-image: url('../images/product-9.png');
+  }
+}
+.recommend{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: calc(25% - 22.5px);
+    box-shadow: 0px 2px 6px #00000029;
+    @include md {
+       width: calc(50% - 15px);
+    }
+    &:nth-child(1), &:nth-child(2){
+      @include md {
+        margin-bottom: 32px;
+      }
+      @include sm {
+        margin-bottom: 16px;
+      }
+    }
+    &:last-child{
+      @include sm {
+        margin-bottom: 0px;
+      }
+    }
+    @include sm {
+       width: 100%;
+       margin-bottom: 16px;
+    }
+  }
+  &__innerbox{
+    height: 256px;
+    img{
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__content{
+    min-height: 204px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include md {
+      padding: 16px 24px;
+    }
+    &__name{
+      margin-bottom: 8px;
+      line-height: 20px;
+      font-size: $font-size-sm;
+    }
+    &__date{
+      font-size: $font-size-sm;
+      line-height: 20px;
+      color: $caption;
+    }
+  }
+}
+.contactForm{
+  width: 66%;
+  margin: 0 auto;
+  @include sm{
+    width: 100%;
+  }
+  &__description{
+    margin-bottom: 20px;
+    font-size: $h5-font-size;
+    line-height: 30px;
+    @include md {
+      font-size: $h6-font-size;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    @include sm {
+      margin-bottom: 8px;
+    }
+  }
+  &__input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid #000;
+    padding-left: 16px;
+    @include md {
+      height: 36px;
+      padding-left: 12px;
+    }
+  }
+  &__label{
+    margin-bottom: 4px;
+    @include md {
+      font-size: $font-size-sm;
+      line-height: 20px;
+    }
+  }
+  &__textarea{
+    width: 100%;
+    background-color: transparent;
+    resize: none;
+    outline: 1px solid #000;
+    border: none;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  &__checkbox{
+    appearance: none;
+    margin: 0;
+    &:checked + .contactForm__box{
+       background-color: $primary;
+       border-color: $primary;
+    }
+    &:checked + .contactForm__box:after{
+      transform: scale(1);
+    }
+  }
+  &__box{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 1px;
+    margin: 0;
+    margin-right: 10px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s, border-color 0.15s;
+    &:after{
+      content: "\2714";
+      color: $white;
+      transform: scale(0);
+      transition: transform 0.15s;
+    }
+  }
+  &__checkboxText{
+    display: flex;
+  }
+  &__button{
+    width: 350px;
+    height: 54px;
+    background-color: $primary;;
+    margin: 0 auto;
+    display: block;
+    border: 0;
+    color: $white;
+    @include md {
+      width: 210px;
+      height: 40px;
+      font-size: $font-size-sm;
+    }
+    @include sm {
+      width: 165px;
+      height: 36px;
+      font-size: $font-size-sm;
+    }
+  }
+  &__form-group{
+    margin-bottom: 16px;
+    @include md {
+      margin-bottom: 8px;
+    }
+    &:nth-child(6){
+      margin-bottom: 40px;
+      display: flex;
+      @include md{
+        margin-bottom: 20px;
+      }
+      label{
+        margin: 0;
+        line-height: 20px;
+        cursor: pointer;
+        p{
+          transform: translateY(1px);
+        }
+      }
+    }
+  }
+}
