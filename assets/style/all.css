@@ -247,7 +247,7 @@ input::placeholder, textarea::placeholder {
     .header {
       padding: 0; } }
   @media (max-width: 767px) {
-    .header a {
+    .header h1 a {
       width: 100%; } }
   .header__menu {
     display: -webkit-box;
@@ -456,11 +456,18 @@ input::placeholder, textarea::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -24px;
   font-size: 14px; }
   @media (max-width: 992px) {
     .policy {
       margin-right: -12px; } }
+  .policy li:last-child a {
+    padding: 32px 0px 32px 24px; }
+    @media (max-width: 992px) {
+      .policy li:last-child a {
+        padding: 24px 12px; } }
+    @media (max-width: 767px) {
+      .policy li:last-child a {
+        padding: 4px 4px 4px 0; } }
   @media (max-width: 767px) {
     .policy li {
       width: 100%; } }
@@ -879,12 +886,12 @@ input::placeholder, textarea::placeholder {
   .contactForm__box {
     width: 20px;
     height: 20px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     border: 1px solid #000;
     border-radius: 1px;
     margin: 0;
     margin-right: 10px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -919,7 +926,11 @@ input::placeholder, textarea::placeholder {
     margin: 0 auto;
     display: block;
     border: 0;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: all ease 0.15s;
+    -o-transition: all ease 0.15s;
+    transition: all ease 0.15s;
+    font-size: 16px; }
     @media (max-width: 992px) {
       .contactForm__button {
         width: 210px;
@@ -930,6 +941,8 @@ input::placeholder, textarea::placeholder {
         width: 165px;
         height: 36px;
         font-size: 14px; } }
+    .contactForm__button:hover {
+      background-color: #650300; }
   .contactForm__form-group {
     margin-bottom: 16px; }
     @media (max-width: 992px) {
