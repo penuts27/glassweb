@@ -381,11 +381,11 @@
   &__box{
     width: 20px;
     height: 20px;
+    flex-shrink: 0; //  also can use min-width: 20px;
     border: 1px solid #000;
     border-radius: 1px;
     margin: 0;
     margin-right: 10px;
-    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,6 +408,8 @@
     display: block;
     border: 0;
     color: $white;
+    transition: all ease 0.15s;
+    font-size: $h6-font-size;
     @include md {
       width: 210px;
       height: 40px;
@@ -417,6 +419,9 @@
       width: 165px;
       height: 36px;
       font-size: $font-size-sm;
+    }
+    &:hover{
+      background-color: $danger;
     }
   }
   &__form-group{

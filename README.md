@@ -1,10 +1,10 @@
-# 8-) 超清晰眼鏡行 | Glasses store
+# :sunglasses: 超清晰眼鏡行 | Glasses store
 > 超清晰眼鏡行一是個電商網網站，裡面什麼都有賣
 
 ## 成品與資源連結
 - Pages
   - [首頁index](https://penuts27.github.io/glassweb/)
-  - [產品頁products](https://penuts27.github.io/glassweb/product.html)
+  - [產品頁products](https://penuts27.github.io/glassweb/product.html)ㄔㄛ
   
 - 設計稿
   - [首頁index](2224af-8682/screen/9030f53b-bb49-44c3-8d71-9901ad0d5206/specs/)

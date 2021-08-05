@@ -10,7 +10,7 @@
   @include sm{
     padding: 0;
   }
-  a{
+  h1 a{
     @include sm{
     width: 100%;
     }
@@ -214,12 +214,22 @@
 .policy{
   display: flex;
   flex-wrap: wrap;
-  margin-right: -24px;
   font-size: $font-size-sm;
   @include md{
     margin-right: -12px;
   }
   li{
+    &:last-child{
+    a{
+      padding: 32px 0px 32px 24px;
+      @include md{
+        padding: 24px 12px;
+       }
+       @include sm{
+        padding: 4px 4px 4px 0;
+      }
+    }
+     }
     @include sm{
         width: 100%;
       }
