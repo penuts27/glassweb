@@ -118,6 +118,7 @@ function initMap() {
     });
   })
 }
+
 // listening to select input
 mapChooseInputJs.addEventListener('change', function onInputSelevtChange(e) {
   store.forEach(obj => {
