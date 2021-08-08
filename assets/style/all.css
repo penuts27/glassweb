@@ -150,7 +150,7 @@ input::placeholder, textarea::placeholder {
     text-align: center; }
 
 .article {
-  padding-top: 96;
+  padding-top: 96px;
   padding-bottom: 35px; }
   @media (max-width: 992px) {
     .article {
