@@ -5,6 +5,7 @@
 - Pages
   - [首頁index](https://penuts27.github.io/glassweb/)
   - [產品頁products](https://penuts27.github.io/glassweb/product.html)
+  - [門市頁storesmap](https://penuts27.github.io/glassweb/storemap.html)
   
 - 設計稿
   - [首頁index](2224af-8682/screen/9030f53b-bb49-44c3-8d71-9901ad0d5206/specs/)
