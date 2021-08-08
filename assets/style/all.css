@@ -182,44 +182,56 @@ input::placeholder, textarea::placeholder {
     @media (max-width: 767px) {
       .article__strip {
         height: 40px; } }
-  .article .form__form-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .article .form__label {
-    font-size: 24px;
-    line-height: 35px;
-    margin-right: 20px; }
-    @media (max-width: 992px) {
-      .article .form__label {
-        font-size: 16px;
-        line-height: 22px; } }
-    @media (max-width: 767px) {
-      .article .form__label {
-        font-size: 14px;
-        line-height: 20px;
-        margin-right: 12px;
-        -ms-flex-negative: 0;
-            flex-shrink: 0; } }
-  .article .form__select {
-    width: 324px;
-    height: 45px;
-    padding-left: 10px;
-    border-radius: 0;
-    border: 1px solid #00000020; }
-    @media (max-width: 992px) {
-      .article .form__select {
-        width: 237px; } }
-    @media (max-width: 767px) {
-      .article .form__select {
-        font-size: 14px;
-        line-height: 20px;
-        width: 100%;
-        -ms-flex-negative: 1;
-            flex-shrink: 1; } }
+
+.form__form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.form__label {
+  font-size: 24px;
+  line-height: 35px;
+  margin-right: 20px; }
+  @media (max-width: 992px) {
+    .form__label {
+      font-size: 16px;
+      line-height: 22px; } }
+  @media (max-width: 767px) {
+    .form__label {
+      font-size: 14px;
+      line-height: 20px;
+      margin-right: 12px;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; } }
+
+.form__select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  line-height: 1;
+  width: 324px;
+  height: 45px;
+  background: url("../images/downArrow.png") no-repeat scroll right center transparent;
+  padding-right: 14px;
+  background-size: 16px 16px;
+  padding-left: 10px;
+  border-radius: 0;
+  border: 1px solid #00000020;
+  outline: none; }
+  @media (max-width: 992px) {
+    .form__select {
+      width: 237px; } }
+  @media (max-width: 767px) {
+    .form__select {
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+      -ms-flex-negative: 1;
+          flex-shrink: 1; } }
 
 .top__section {
   padding-top: 60px;
@@ -295,10 +307,6 @@ input::placeholder, textarea::placeholder {
 
 .white__color {
   color: #fff; }
-
-.black__color {
-  color: #000;
-  margin-bottom: 20px; }
 
 .header {
   display: -webkit-box;
