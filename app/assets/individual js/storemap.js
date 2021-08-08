@@ -118,6 +118,7 @@ function initMap() {
     });
   })
 }
+
 // listening to select input
 mapChooseInputJs.addEventListener('change', function onInputSelevtChange(e) {
   store.forEach(obj => {
@@ -217,4 +218,3 @@ mapChooseInputJs.addEventListener('change', function onInputSelevtChange(e) {
 //     'googleMap': 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.35663728877!2d120.34292731399725!3d22.565760938910664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e1cd5164fa771%3A0x67d203a709dc1ee0!2zODEy6auY6ZuE5biC5bCP5riv5Y2A5bCP5riv6LevMzTomZ8xN2Y!5e0!3m2!1szh-TW!2stw!4v1627916669668!5m2!1szh-TW!2stw'
 //   },
 // ]
-

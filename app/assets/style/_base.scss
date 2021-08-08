@@ -14,6 +14,7 @@ img{
 //   left: 0;
 // }
 body{
+  position: relative;
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: 1.5;
@@ -90,12 +91,16 @@ input,textarea{
   }
 }
 .article{
-  padding: 96px 0 35px 0;
+  padding-top: 96;
+  padding-bottom: 35px;
   @include md {
-    padding: 60px 0 24px 0;
+    padding-top: 60px;
+    padding-bottom: 24px;
   }
   @include sm {
-    padding: 28px 0 20px 0;
+    // optimize
+    padding-top: calc(28px + 49.32px);
+    padding-bottom: 20px;
   }
   &__title{
     display: flex;
@@ -121,6 +126,7 @@ input,textarea{
       height: 40px;
     }
 }
+}
 .form{
   &__form-group{
     display: flex;
@@ -142,11 +148,18 @@ input,textarea{
     }
   }
   &__select{
+    appearance: none;
+    border: none;
+    line-height: 1;
     width: 324px;
     height: 45px;
+    background: url("../images/downArrow.png") no-repeat scroll right center transparent;
+    padding-right: 14px;
+    background-size: 16px 16px;
     padding-left: 10px;
     border-radius: 0;
     border: 1px solid $border;
+    outline: none;
     @include md {
       width: 237px;
     }
@@ -158,7 +171,8 @@ input,textarea{
     }
   }
 }
-}
+
+
 .top{
   &__section{
     padding-top: 60px;
@@ -248,7 +262,7 @@ input,textarea{
 .white__color{
   color: $white;
 }
-.black__color{
-  color: $black;
-  margin-bottom: 20px;
-}
+// .black__color{
+//   color: $black;
+//   margin-bottom: 20px;
+// }

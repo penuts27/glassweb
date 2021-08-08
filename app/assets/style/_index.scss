@@ -4,6 +4,8 @@
   background-size: cover;
   background-position: 50% 50%;
   @include sm{
+    // optimize
+    padding-top: 49.39px;
     height: 394px;
     background-position: 44% 50%;
   }

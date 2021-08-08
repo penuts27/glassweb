@@ -64,6 +64,8 @@
       font-size: $h5-font-size;
       line-height: 30px;
       padding: 4px 0 4px 27px;
+      display: flex;
+      align-items: center;
       @include md {
         font-size: $font-size-sm;
         line-height: 21px;
@@ -78,7 +80,6 @@
           margin-right: 10px;
         }
       }
-
     }
   }
 }

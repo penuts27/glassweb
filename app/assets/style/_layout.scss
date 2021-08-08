@@ -1,4 +1,5 @@
 .header{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -6,9 +7,12 @@
   padding: 0 88px;
   @include md{
     padding: 0 7px 0 39px;
+    z-index: 100;
   }
   @include sm{
     padding: 0;
+    position: fixed;
+    top: 0;
   }
   h1{
     @include sm{
@@ -20,11 +24,35 @@
     }
   }
   }
+  &__toggler{
+    display: none;
+    @include sm{
+      padding: 9px;
+      position: absolute;
+      top: 0;
+      left: 4px;
+      display: inline-block;
+    }
+    img{
+
+    }
+  }
   &__menu{
     display: flex;
     flex-wrap: wrap;
     @include sm{
-    width: 100%;
+      position: absolute;
+      max-height: 0;
+      overflow: hidden;
+      top: 100%;
+      transition: all 0.8s;
+      z-index: 120;
+      width: 100%;
+      &.active {
+        background-color: $primary;
+        max-height: 160px;
+        overflow-y: auto;
+      }
     }
   }
   &__link{
@@ -59,8 +87,8 @@
   &__item{
     position: relative;
     @include sm{
-    border: 1px solid $white;
-    width: 50%;
+    outline: 1px solid transparentize($white, 0.8);
+    width: 100%;
   }
   }
 }
