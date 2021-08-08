@@ -332,6 +332,7 @@ input::placeholder, textarea::placeholder {
       z-index: 100; } }
   @media (max-width: 767px) {
     .header {
+      width: 100vw;
       padding: 0;
       position: fixed;
       top: 0; } }
