@@ -16,6 +16,7 @@
 `ejs`  
 `scss`  
 `css-bem命名`
+`google map api`
 
 ## RWD斷點
 #### mobole device: (sm)
@@ -41,7 +42,9 @@
 - App # 原始碼
   - assets # 靜態資源放置處
     - images # 圖片放置處
-    - js # JavaScript 放置處
+    - js # 共同JavaScript 放置處
+    - individual js # 個別JavaScript 放置處
+      - storemap.js
     - style # 樣式放置處
       - _variable.scss
       - _reset.scss
@@ -49,9 +52,11 @@
       - _base.sass
       - _layout.scss
       - _index.scss
-      - _layout.scss  
+      - _storemap.scss  
       - _product.scss  
   - index.html # 首頁 HTML
+  - product.html # 產品頁 HTML
+  - storemap.html # 門市頁 HTML
   - layout.ejs # Layout ejs
 - gulpfile.js # Gulp 原始碼
   - envOptions.js # Gulp 路徑變數
